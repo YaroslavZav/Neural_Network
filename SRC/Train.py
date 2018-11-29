@@ -10,9 +10,9 @@ from keras.layers import Conv2D, MaxPooling2D
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
 
-train_data=sys.argv[3]
-test_data=sys.argv[4]
-val_data=sys.argv[5]
+train_data=sys.argv[2]
+test_data=sys.argv[3]
+val_data=sys.argv[4]
 
 img_rows, img_cols=120,120
 input_shape=(3, img_rows, img_cols) 
@@ -62,3 +62,4 @@ Val_generator = Datagen.flow_from_directory(val_data,
                     validation_data=Val_generator,
                     validation_steps=nb_validation_samples )
  model.save(sys.argv[1])
+ 
