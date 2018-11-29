@@ -11,7 +11,7 @@ import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
 
 
-test_data=sys.argv[4]
+test_data=sys.argv[3]
 img_rows, img_cols=120,120
 input_shape=(3, img_rows, img_cols) 
 epochs=5
